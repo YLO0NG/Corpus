@@ -88,3 +88,15 @@
 ### 2.7. 传统工具对比 (JExtract Result)
 
 - `jextract_result`: 记录使用传统静态分析工具（JExtract）对同一代码段进行分析的结果，通常用于与 LLM 的结果进行对比（例如 result: `"UNMATCHED"` 表示传统工具未能识别出该重构机会）。
+
+
+
+
+以`bennidi/mbassador`为例：
+1. publish 方法重构
+重构前：https://github.com/bennidi/mbassador/tree/d08470c339d317693d86b3efc356e16b1f16ad97
+重构后：https://github.com/bennidi/mbassador/tree/fca9c6017cb8210a7dd216388bf66e7af3bfd45e
+
+2. finalize 方法重构
+重构前：https://github.com/bennidi/mbassador/tree/ffb5d01b70c5999379f53f150cf056423c30a089
+重构后：https://github.com/bennidi/mbassador/tree/95c5d8e535d0dc0c36438defd45f9917f124f713
