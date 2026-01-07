@@ -14,6 +14,9 @@ def clean_data():
     # Find all json files
     json_files = glob.glob(os.path.join(SOURCE_DIR, "*.json"))
     
+    global_id_counter = 1
+    total_count = 0
+    
     for json_file in json_files:
         filename = os.path.basename(json_file)
         # Skip package.json or other non-data files if they exist (though list_dir only showed project jsons)
@@ -38,31 +41,30 @@ def clean_data():
                 # though schema suggests they should be there.
                 
                 # Construct the cleaned object
+                oracle = item.get("oracle", {})
                 cleaned_item = {
-                    "case_id": item.get("ID"),
+                    "case_id": global_id_counter,
                     "project_name": item.get("projectName"),
                     "filename": item.get("filename"),
-                    "sha": item.get("sha"),
-                    "parent_sha": item.get("ParentSHA"), 
-                    "sha_before_ef": item.get("sha_before_ef"),
-                    "sha_ef": item.get("sha_ef"),
-                    "host_method": {
-                        "class_name": item.get("host_class_name"),
-                        "function_name": item.get("host_functionName"),
-                        "start_line": item.get("host_start_line"),
-                        "end_line": item.get("host_end_line"),
-                        "code_range_start_offset": item.get("host_start_off_set"),
-                    },
-                    "extracted_method": {
-                         "extracted_method_functionName": item.get("extracted_method_functionName"),
-                         "extracted_method_start_line": item.get("extracted_method_start_line"),
-                         "extracted_method_end_line": item.get("extracted_method_end_line"),
-                    },
-                    "oracle": item.get("oracle")
+                    "class_name": item.get("host_class_name"),
+                    "function_name": item.get("host_functionName"),
+                    "function_start_line": item.get("host_start_line"),
+                    "function_end_line": item.get("host_end_line"),
+                    "oracle_start_line": oracle.get("line_start") if oracle else None,
+                    "oracle_end_line": oracle.get("line_end") if oracle else None,
+                    "sha_before_ef": f"https://github.com/{item.get('projectName')}/tree/{item.get('sha_before_ef')}",
+                    "sha_ef": f"https://github.com/{item.get('projectName')}/tree/{item.get('sha_ef')}"
                 }
                 
                 cleaned_items.append(cleaned_item)
-                
+                global_id_counter += 1
+            
+            total_count += len(cleaned_items)
+            
+            if not cleaned_items:
+                print(f"Skipping {filename} (0 items)")
+                continue
+
             # Save cleaned data
             output_path = os.path.join(OUTPUT_DIR, filename)
             with open(output_path, 'w', encoding='utf-8') as f:
@@ -72,6 +74,10 @@ def clean_data():
             
         except Exception as e:
             print(f"Error processing {filename}: {e}")
+
+    print("-" * 30)
+    print(f"Total extracted items: {total_count}")
+    print("-" * 30)
 
 if __name__ == "__main__":
     clean_data()

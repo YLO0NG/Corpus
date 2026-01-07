@@ -1,0 +1,28 @@
+[
+    {
+        "case_id": 34,
+        "project_name": "bennidi/mbassador",
+        "filename": "src/main/java/net/engio/mbassy/MBassador.java",
+        "class_name": "net.engio.mbassy.MBassador",
+        "function_name": "publish",
+        "function_start_line": 27,
+        "function_end_line": 49,
+        "oracle_start_line": 35,
+        "oracle_end_line": 39,
+        "sha_before_ef": "https://github.com/bennidi/mbassador/tree/d08470c339d317693d86b3efc356e16b1f16ad97",
+        "sha_ef": "https://github.com/bennidi/mbassador/tree/fca9c6017cb8210a7dd216388bf66e7af3bfd45e"
+    },
+    {
+        "case_id": 35,
+        "project_name": "bennidi/mbassador",
+        "filename": "src/main/java/org/mbassy/AbstractMessageBus.java",
+        "class_name": "org.mbassy.AbstractMessageBus",
+        "function_name": "finalize",
+        "function_start_line": 206,
+        "function_end_line": 212,
+        "oracle_start_line": 209,
+        "oracle_end_line": 211,
+        "sha_before_ef": "https://github.com/bennidi/mbassador/tree/ffb5d01b70c5999379f53f150cf056423c30a089",
+        "sha_ef": "https://github.com/bennidi/mbassador/tree/95c5d8e535d0dc0c36438defd45f9917f124f713"
+    }
+]

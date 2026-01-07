@@ -1,0 +1,93 @@
+[
+    {
+        "case_id": 1545,
+        "project_name": "patrickfav/bytes-java",
+        "filename": "src/main/java/at/favre/lib/bytes/Util.java",
+        "class_name": "at.favre.lib.bytes.Util",
+        "function_name": "readFromFile",
+        "function_start_line": 374,
+        "function_end_line": 390,
+        "oracle_start_line": 381,
+        "oracle_end_line": 383,
+        "sha_before_ef": "https://github.com/patrickfav/bytes-java/tree/c3f7239d0a0a397598e2638584efcfd8d916754d",
+        "sha_ef": "https://github.com/patrickfav/bytes-java/tree/1b236d8404558b9dc3a3d8cb86de3a52d5ee85fc"
+    },
+    {
+        "case_id": 1546,
+        "project_name": "patrickfav/bytes-java",
+        "filename": "src/test/java/at/favre/lib/bytes/BinaryToTextEncodingTest.java",
+        "class_name": "at.favre.lib.bytes.BinaryToTextEncodingTest",
+        "function_name": "encodeDecodeHex",
+        "function_start_line": 113,
+        "function_end_line": 122,
+        "oracle_start_line": 116,
+        "oracle_end_line": 120,
+        "sha_before_ef": "https://github.com/patrickfav/bytes-java/tree/3127402e700138872b84fa4d8f4c92c910a34a13",
+        "sha_ef": "https://github.com/patrickfav/bytes-java/tree/b21ed765a54196ab64940fa623904ad854fc1c6a"
+    },
+    {
+        "case_id": 1547,
+        "project_name": "patrickfav/bytes-java",
+        "filename": "src/test/java/at/favre/lib/bytes/BinaryToTextEncodingTest.java",
+        "class_name": "at.favre.lib.bytes.BinaryToTextEncodingTest",
+        "function_name": "encodeDecodeBase64",
+        "function_start_line": 91,
+        "function_end_line": 111,
+        "oracle_start_line": 98,
+        "oracle_end_line": 101,
+        "sha_before_ef": "https://github.com/patrickfav/bytes-java/tree/3127402e700138872b84fa4d8f4c92c910a34a13",
+        "sha_ef": "https://github.com/patrickfav/bytes-java/tree/b21ed765a54196ab64940fa623904ad854fc1c6a"
+    },
+    {
+        "case_id": 1548,
+        "project_name": "patrickfav/bytes-java",
+        "filename": "src/test/java/at/favre/lib/bytes/BinaryToTextEncodingTest.java",
+        "class_name": "at.favre.lib.bytes.BinaryToTextEncodingTest",
+        "function_name": "encodeDecodeBase64",
+        "function_start_line": 91,
+        "function_end_line": 111,
+        "oracle_start_line": 103,
+        "oracle_end_line": 109,
+        "sha_before_ef": "https://github.com/patrickfav/bytes-java/tree/3127402e700138872b84fa4d8f4c92c910a34a13",
+        "sha_ef": "https://github.com/patrickfav/bytes-java/tree/b21ed765a54196ab64940fa623904ad854fc1c6a"
+    },
+    {
+        "case_id": 1549,
+        "project_name": "patrickfav/bytes-java",
+        "filename": "src/test/java/at/favre/lib/bytes/BinaryToTextEncodingTest.java",
+        "class_name": "at.favre.lib.bytes.BinaryToTextEncodingTest",
+        "function_name": "encodeDecodeBase64",
+        "function_start_line": 91,
+        "function_end_line": 111,
+        "oracle_start_line": 104,
+        "oracle_end_line": 107,
+        "sha_before_ef": "https://github.com/patrickfav/bytes-java/tree/3127402e700138872b84fa4d8f4c92c910a34a13",
+        "sha_ef": "https://github.com/patrickfav/bytes-java/tree/b21ed765a54196ab64940fa623904ad854fc1c6a"
+    },
+    {
+        "case_id": 1550,
+        "project_name": "patrickfav/bytes-java",
+        "filename": "src/test/java/at/favre/lib/primitives/bytes/BytesMiscTest.java",
+        "class_name": "at.favre.lib.primitives.bytes.BytesMiscTest",
+        "function_name": "testToString",
+        "function_start_line": 13,
+        "function_end_line": 21,
+        "oracle_start_line": 17,
+        "oracle_end_line": 19,
+        "sha_before_ef": "https://github.com/patrickfav/bytes-java/tree/975faf2b2b61f318310ccbd5609ff5a6002705e7",
+        "sha_ef": "https://github.com/patrickfav/bytes-java/tree/ef4f32f652122b730f524d28cb2e6471a25a8e6b"
+    },
+    {
+        "case_id": 1551,
+        "project_name": "patrickfav/bytes-java",
+        "filename": "src/test/java/at/favre/lib/primitives/bytes/BytesMiscTest.java",
+        "class_name": "at.favre.lib.primitives.bytes.BytesMiscTest",
+        "function_name": "testToString",
+        "function_start_line": 13,
+        "function_end_line": 21,
+        "oracle_start_line": 18,
+        "oracle_end_line": 20,
+        "sha_before_ef": "https://github.com/patrickfav/bytes-java/tree/975faf2b2b61f318310ccbd5609ff5a6002705e7",
+        "sha_ef": "https://github.com/patrickfav/bytes-java/tree/ef4f32f652122b730f524d28cb2e6471a25a8e6b"
+    }
+]
